@@ -1,8 +1,14 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "AKAA,AAAA,UAAU,AAAC,CACP,SAAS,CAAE,MAAM,CACjB,MAAM,CAAE,MAAM,CACd,OAAO,CAAE,MAAM,CAClB",
     "sources": [
-        "../scss/main.scss"
+        "../scss/main.scss",
+        "../scss/_normalize.scss",
+        "../scss/_mixin.scss",
+        "../scss/_generals.scss",
+        "../scss/blocks/_all-blocks.scss",
+        "../scss/blocks/_container.scss",
+        "../scss/blocks/_header.scss"
     ],
     "names": [],
     "file": "main.min.css"
