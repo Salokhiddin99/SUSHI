@@ -1,0 +1,138 @@
+.section-title{
+    font-family: 'Permanent Marker';
+    color: #E7272D;
+    text-align: center;
+    font-size: 25px;
+}
+
+.h1{
+    font-family: 'Barlow';
+    font-size: 56px;
+    text-align: center;
+    font-weight: 900;
+    color: #232323;
+}
+.food__card{
+    cursor: pointer;
+    border: black solid 1px;
+    border-radius: 20px;
+    width: 280px;
+    height: 400px;
+    padding: 25px 15px;
+    font-family: sans-serif;
+    text-align: center;
+
+    &:hover > b{color: white;}
+    &:hover > .fcard__link{
+        color: white;
+        border: none;
+        background-color: #fcd15c;
+    }
+    &:hover{
+        transform: translateY(-40px);
+        transition: all 0.5s;
+        border: none;
+        background-color: #E7272D;
+        color: white;
+    }
+}
+.food-cards__inner{
+    padding-top: 80px;
+    display: flex;
+    justify-content: space-between;flex-wrap: wrap;}
+.fcard{
+    &__title{
+        font-size: 18.72px;
+    }
+    &__subtitle{
+        font-size: 16px;
+        margin: 15px 0px;
+    }
+    &__link{
+        display: block;
+        text-decoration: none;
+        border: 1px solid rgba(0, 0, 0, 0.664);
+        border-radius: 50px;
+        color: black;
+        padding: 12px 18px;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    &__img{
+        max-width:250px;
+        height: auto;
+    }
+}
+b{
+    color: #E7272D;
+    font-size: 32px;
+}
+
+
+@media screen and (max-width:1024px) {
+    .container{max-width: 988px;}
+
+    .h1{font-size: 52px;}
+
+    .food__card{
+        width: 220px;
+    }
+
+    .food-cards__inner{
+        padding-top: 65px;
+    }
+
+    .fcard{
+        &__title{
+            font-size: 18.72px;
+        }
+        &__subtitle{
+            font-size: 16px;
+            margin: 13px 0px;
+        }
+        &__link{
+            padding: 10px 15px;
+            width: 70%;
+            margin-top: 26px;
+        }
+        &__img{
+            max-width:200px;
+            margin-top: 20px;
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .container{max-width:747px;}
+
+
+    .food__card{
+        width: 100%;
+        height: 500px;
+        margin-bottom: 30px;
+    }
+    .fcard__link{width: 30%;}
+    .fcard__img{max-width: 90%;}
+}
+
+
+@media screen and (max-width:425px) {
+    .container{max-width: 400px;}
+
+    .h1{margin-top: 0px;}
+
+    .food__card{
+        height: 400px;
+    }
+    .fcard__link{
+        width: 50%;
+    }
+}
+@media screen and (max-width:320px) {
+    .container{max-width: 300px;}
+
+    .fcard__link{
+        width: 80%;
+    }
+}
